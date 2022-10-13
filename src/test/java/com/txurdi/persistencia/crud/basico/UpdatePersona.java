@@ -11,7 +11,7 @@ import java.util.Scanner;
  * Ejemplo básico para crear una nueva persona<br>
  * id es autoincremental, no hace falta solicitarlo <br>
  * 
- * @author Ander Uraga Real
+ * @author Aitor Perez
  *
  */
 public class UpdatePersona {
