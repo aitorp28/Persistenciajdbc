@@ -20,7 +20,9 @@ public class PersonaDAOTest {
 		
 		System.out.println(personas);
 		
-
+		System.out.println(dao.findById(1));
+		
+		
 	}
 
 }

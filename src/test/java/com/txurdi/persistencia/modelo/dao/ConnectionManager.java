@@ -10,7 +10,7 @@ public class ConnectionManager {
 	private static Connection CONEXION = null;
 	
 	//parametros de conexion
-	private final static String URL = "jdbc:mysql://localhost:3306/txurdi?useSSL=false";
+	private final static String URL = "jdbc:mysql://localhost:3306/supermercado?useSSL=false";
 	private final static String USER = "root";
 	private final static String PASS = "root";
 	

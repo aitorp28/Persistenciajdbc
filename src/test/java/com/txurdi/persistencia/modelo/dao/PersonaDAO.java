@@ -17,10 +17,10 @@ public class PersonaDAO implements Singleton, Crudable<Persona> {
 	
 	// Sentencias SQL
 	private static final String SQL_FIND_ALL = "SELECT id, nombre, nif, edad FROM persona ORDER BY nombre ASC LIMIT 500; ";
-	private static final String FIND_BY_ID = "SELECT id, nombre, nif, edad FROM persona ORDER BY nombre ASC LIMIT 500; ";
-	private static final String UPDATE = "SELECT id, nombre, nif, edad FROM persona ORDER BY nombre ASC LIMIT 500; ";
-	private static final String INSERT = "SELECT id, nombre, nif, edad FROM persona ORDER BY nombre ASC LIMIT 500; ";
-	private static final String DELETE = "SELECT id, nombre, nif, edad FROM persona ORDER BY nombre ASC LIMIT 500; ";
+	private static final String FIND_BY_ID = "SELECT id, nombre, nif, edad FROM persona WHERE id = ? ;  ";
+	private static final String UPDATE = "UPDATE `persona` SET `nombre` = ?, `nif` = ?, `edad` = ? WHERE `id` = ? ; ";
+	private static final String INSERT = "INSERT INTO `persona` (`nombre`, `nif`, `edad`) VALUES (?,?,?) ; ";
+	private static final String DELETE = "DELETE FROM `persona` WHERE `id` = ? ; ";
 	
 	
 
